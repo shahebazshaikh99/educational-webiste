@@ -1,0 +1,80 @@
+/* media quary for navbar */
+
+@media (max-width:768px){
+    html{
+        font-size: 55%;
+    }
+    header #menu{
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        top: -130%;
+        left: 0;
+        width: 100%;
+        background-color: #444;
+    }
+    header .navbar.active{
+       top: 55px;
+       transition: .4s linear;
+    }
+    header .navbar ul{
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+    header .navbar ul li{
+        margin: 1.5rem 0;
+        text-align: center;
+        width: 100%;
+    }
+    header .navbar ul li a{
+font-size: 2.5rem;
+display: block;
+    }
+    header .navbar ul li a.active,
+    header .navbar ul li a:hover{
+        color: #f39c12;
+    }
+    .fa-times{
+        transform: rotate(180deg);
+    }
+    header .navbar .nav-toggle{
+top: 6.4rem;
+    }
+}
+
+/* media quary for login form */
+@media (max-width:500px){
+    html{
+        font-size: 50%;
+    }
+}
+/* media quary for home section */
+@media (max-width:768px){
+    .home h1 {
+        font-size: 4rem;
+    }
+    .home p {
+        width: auto;
+    }
+}
+/* media quary for techer section */
+
+@media (max-width:768px){
+    .teacher p {
+        width: auto;
+    }
+    }
+
+    /* media quary for contact img section */
+    @media (max-width:768px){
+        .contact .row .image {
+            display: none;
+        }
+        }
+        @media (max-width:500px){
+            .contact .row form .box{
+                width: 100%;
+            }
+        }
+    
